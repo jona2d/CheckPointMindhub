@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid black; */
+}
+
+
+header{
+    background-image: url(./assets/img/4.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 30vh;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: white;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    background-color: black;
+    /* color: white; */
+
+}
+
+nav a{
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+a[href="#"]{
+    background-color: rgb(40, 173, 38);
+}
+
+span{
+    color: rgb(40, 173, 38);
+}
+
+main{
+    background-image: url(./assets/img/images.jpg);
+    background-size: cover;
+    background-position-y: -225px;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 60vh;
+    height: auto;
+}
+
+section{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+article{
+    border-radius: 64px 0px 87px 0px;
+    -moz-border-radius: 64px 0px 87px 0px;
+    -webkit-border-radius: 64px 0px 87px 0px;
+    border: 0px solid #000000;
+    border: 0px solid #000000;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.cards{
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+}
+
+h4{
+    text-align: center;
+    margin-top: 10px;
+}
+
+ul{
+    width: 100%;
+    height: 35%;
+    list-style: inside;
+    background-size: cover;
+    background-position: center;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 10vh;
+    height: auto;
+    align-items: center;
+    color: white;
+}
+
+.subrayado{
+    text-decoration: underline;
+}
+
+
+@media(max-width: 768px){
+    article{
+        width: 200px;
+    }
+}
+
+@media(max-width: 650px){
+    section{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 425px){
+    nav{
+        flex-direction: column;
+    };
+}
